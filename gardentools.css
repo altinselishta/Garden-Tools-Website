@@ -1,0 +1,47 @@
+.code{
+    background-color: red;
+    color: white;
+    height: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+
+}
+.items{
+    background-color: greenyellow;
+    display: flex;
+    justify-content: space-between;
+     
+    
+}
+.logo{
+  display: flex;  
+  margin-left: 10px;
+  width: 60px;
+  height: 60px;
+}
+#listatheader{
+    display: flex;
+    width: 20%;
+    margin-right:30px;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 15px;
+}
+.Kopshti{
+    display: flex;
+    background-image: url(Kopshti.jpg);
+    background-size: 90% 90%;
+    justify-content: center;
+    align-items: center;
+   
+}
+.footeri{
+    background-color: gray;
+    align-items: center;
+    display: flex;
+    height: 80px;
+   
+}
