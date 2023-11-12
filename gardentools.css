@@ -1,18 +1,21 @@
-.code{
+p{
     background-color: red;
     color: white;
     height: 20px;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     padding-top: 20px;
     width: 100%;
+    
+   
+   
 
 }
 .items{
     background-color: greenyellow;
     display: flex;
     justify-content: space-between;
-     
+    
     
 }
 .logo{
@@ -38,21 +41,29 @@
     align-items: center;
    
 }
-
+.Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.Container img{
+    width: 200px;
+    height: auto;
+}
 
 .footeri{
     background-color: gray;
     align-items: center;
     display: flex;
     height: 80px;
+    
    
 }
 .Linkat-social{
-    display: flex;
-    gap: 10px;
-}
-.Linkat-social img{
-    max-width: 32px;
-    height: auto;
-    margin: 0px;
+   display: flex;
+   gap: 10px;
+    
 }
