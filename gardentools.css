@@ -38,10 +38,21 @@
     align-items: center;
    
 }
+
+
 .footeri{
     background-color: gray;
     align-items: center;
     display: flex;
     height: 80px;
    
+}
+.Linkat-social{
+    display: flex;
+    gap: 10px;
+}
+.Linkat-social img{
+    max-width: 32px;
+    height: auto;
+    margin: 0px;
 }
