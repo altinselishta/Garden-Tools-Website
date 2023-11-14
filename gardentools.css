@@ -7,8 +7,6 @@ p{
     padding-top: 20px;
     width: 100%;
     
-   
-   
 
 }
 .items{
@@ -41,6 +39,7 @@ p{
     align-items: center;
    
 }
+
 .Container{
     display: flex;
     flex-wrap: wrap;
@@ -53,6 +52,63 @@ p{
     width: 200px;
     height: auto;
 }
+.Rake{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 34px;
+   
+}
+.Axe{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 100px;
+
+}
+.Spade{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 100px;
+}
+.Hoe{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+     height: 100px ; 
+}
+.Pruners{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 129px;
+}
+.Wheelbarrow{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 2px ;
+}
+.Hedge-Shears{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 110px;
+}
+.Garden-Hose{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 40px;
+}
+.Garden-Boots{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 40px;
+}
+
 
 .footeri{
     background-color: gray;
