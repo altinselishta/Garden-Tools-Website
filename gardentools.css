@@ -35,15 +35,28 @@ p{
     justify-content: space-between;
     flex-wrap: wrap;
     column-gap: 15px;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
 }
 
 .Kopshti{
+   display: flex;
     background-image: url(Kopshti.jpg);
     background-size: contain;
     margin: 10px;
     overflow: hidden;
 }
-
+.Welcome{
+   position: absolute;
+   margin-left: 450px;
+   padding-top:  250px;
+   color: white;
+   font-size: 100px;
+   text-align: center;
+}
 .Container{
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +68,13 @@ p{
 .Container img{
     width: 200px;
     height: auto;
+}
+.Tools{
+    text-align: center;
+    color:red;
+    background-color: white;
+    font-size: 200%;
+
 }
 .Rake{
     display: flex;

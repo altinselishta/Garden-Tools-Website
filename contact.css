@@ -31,9 +31,14 @@ nav ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
+    margin-right: 30px;
+}
+nav a{
+ color: white;
+ text-decoration: none;
 }
 nav ul li a:hover{
-    background-color: green;
+    background-color:green;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -84,13 +89,15 @@ button.submit{
     margin: 0;
     gap: 10px;
     margin-right: 10px;
+    
 }
-.Linkat-Social{
-    display: flex;
-    gap: 10px;
-    margin-right: 10px;
+.Linkat-social{
+   display: flex;
+   gap: 10px;
+   margin-right: 10px;
+    
 }
-.Linkat-Kontaktues{
+.Linkat-kontaktues{
     display: flex;
     gap: 10px;
 }
