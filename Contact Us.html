@@ -15,7 +15,8 @@
             <nav id="nav">
                 <ul>
                     <li><a href="Garden Tools.html">Garden Tools</a></li>
-                    <li><a href="About-Us.html">About Us</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                    <li><a href="Products.html">Products</a></li>
                   
                 </ul>
             </nav>
@@ -31,13 +32,26 @@
                 <form action="#" method="post">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
+                    <div id="nameError" class="error"></div>
+            
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname" required>
+                    <div id="surnameError" class="error"></div>
+            
+                    
                     <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required>
+                    <div id="emailError" class="error"></div>
+                    
                     <label for="phone">Phone:</label>
-                    <input type="text" id="phone" name="phone" required>
+                    <input type="text" id="phone" name="Phone" required>
+                    <div id="phoneError" class="error"></div>
+                    
+                    <br>
+
                     <label for="message">Message:</label>
                     <textarea name="message" id="message" rows="4"></textarea>
-                    <button class="submit" type="submit">Submit</button>
+                    <button class="submit" type="submit"onclick="validateForm()">Submit</button>
                 </form>
             </div>
         </section>
@@ -54,6 +68,60 @@
             </address>
 
         </section>
+        <script>
+            function validateName() {
+            var nameRegex = /^[A-Z][a-z]+$/;
+            var nameInput = document.getElementById('name').value;
+            var nameError = document.getElementById('nameError');
+            nameError.innerHTML = '';
+
+            if (!nameRegex.test(nameInput)) {
+                nameError.innerHTML = 'Error: Start with a capital letter and use only letters.';
+            }
+        }
+
+        function validateSurname() {
+            var surnameRegex = /^[A-Z][a-z]+$/;
+            var surnameInput = document.getElementById('surname').value;
+            var surnameError = document.getElementById('surnameError');
+            surnameError.innerHTML = '';
+
+            if (!surnameRegex.test(surnameInput)) {
+                surnameError.innerHTML = 'Error: Start with a capital letter and use only letters.';
+            }
+        }
+
+        
+        function validateEmail() {
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var emailInput = document.getElementById('email').value;
+            var emailError = document.getElementById('emailError');
+            emailError.innerHTML = '';
+            
+            if (!emailRegex.test(emailInput)) {
+                emailError.innerHTML = 'Error: Enter a valid email address.';
+            }
+        }
+        
+        function validatePhone() {
+            var PhoneRegex = /[0-9]{8}$/;
+            var phoneInput = document.getElementById('phone').value;
+            var phoneError = document.getElementById('phoneError');
+            phoneError.innerHTML = '';
+
+            if (!PhoneRegex.test(phoneInput)) {
+                phoneError.innerHTML = 'Error: Use 8 characters, numbers only.';
+            }
+        }
+        
+        function validateForm() {
+            validateName();
+            validateSurname();
+            validateEmail();
+            validatePhone();
+        }
+        </script>
+
         <footer class="footeri">
             <div class="Linkat-social">
            <img src="LogoFacebok.png" alt="Logo Facebook" width="32px" height="32px">
