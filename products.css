@@ -1,0 +1,145 @@
+body{
+    margin:0px;
+}
+
+.items{
+    background-color:  brown;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.logo{
+  display: flex;  
+  margin-left: 10px;
+  width: 60px;
+  height: 60px;
+}
+#listatheader{
+    display: flex;
+    width: 20%;
+    margin-right:30px;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    
+}
+p{
+    background-color: red;
+    color: white;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+.Container img{
+    width: 200px;
+    height: 200px;
+}
+.Tools{
+    text-align: center;
+    background-color: white;
+    color: red;
+    font-size: 200%;
+
+}
+.Rake{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+   
+}
+.Axe{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+
+}
+.Spade{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+}
+.Hoe{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+     height: 100px ; 
+}
+.Pruners{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+}
+.Wheelbarrow{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px ;
+}
+.Hedge-Shears{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px ;
+
+}
+.Garden-Hose{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+}
+.Garden-Boots{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+}
+
+
+.footeri{
+    background-color: gray;
+    align-items: center;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footeri h4{
+    text-align: center;
+    margin: 0;
+    gap: 10px;
+    margin-right: 10px;
+    
+}
+.Linkat-social{
+   display: flex;
+   gap: 10px;
+   margin-right: 10px;
+    
+}
+.Linkat-kontaktues{
+    display: flex;
+    gap: 10px;
+}

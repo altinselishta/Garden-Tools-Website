@@ -57,82 +57,14 @@ a{
    font-size: 100px;
    text-align: center;
 }
-.Container{
+.Text{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-}
-.Container img{
-    width: 200px;
-    height: auto;
-}
-.Tools{
-    text-align: center;
-    color:red;
+    margin: 120px;
     background-color: white;
-    font-size: 200%;
-
-}
-.Rake{
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    height: 100px;
-    margin-right: 10px;
-
-   
-}
-.Axe{
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    height: 100px;
-
-}
-.Spade{
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    height: 100px;
-}
-.Hoe{
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-     height: 100px ; 
-}
-.Pruners{
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    height: 129px;
-}
-.Wheelbarrow{
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    height: 2px ;
-}
-.Hedge-Shears{
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    height: 110px;
-}
-.Garden-Hose{
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    height: 40px;
-}
-.Garden-Boots{
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    height: 40px;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    font-size: large;
 }
 
 
