@@ -76,6 +76,22 @@ button.submit{
     text-align: center;
     padding: 40px 0;
 }
+#nameError{
+    font-size: 15px;
+    color: red;
+}
+#surnameError{
+    font-size: 15px;
+    color: red;
+}
+#emailError{
+    font-size: 15px;
+    color: red;
+}
+#phoneError{
+    font-size: 15px;
+    color: red;
+}
 .footeri{
     background-color: gray;
     align-items: center;
