@@ -38,9 +38,9 @@ nav a{
  text-decoration: none;
 }
 nav ul li a:hover{
-    background-color:green;
+    background-color: gray;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
 }
 .s1{

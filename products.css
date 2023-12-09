@@ -39,7 +39,12 @@ a{
     color: white;
     text-decoration: none;
 }
-
+ul li a:hover{
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
 .Container{
     display: flex;
     flex-wrap: wrap;
