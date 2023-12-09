@@ -7,6 +7,30 @@
         <link rel="stylesheet" href="products.css">
     </head>
     <body>
+
+
+
+
+
+
+
+        <div id = "kontenti">
+            <header>
+              <h2>Slide Show: Shfaqja e Imazheve</h2>
+              <img id ="slideshow">
+            </header>
+            <button onclick="changeImg()"> Next </button>
+          </div>
+
+
+
+
+
+
+
+
+
+
       
             <div class="items">
                 <div>
@@ -19,6 +43,11 @@
                 </ul>
             </div>
         </header>
+
+      
+
+
+
 
         <main>
             
@@ -106,5 +135,26 @@
                  </div>
              
          </footer>
+
+
+
+
      </body>
+
+
+     <script>
+    let i = 0;
+    let imgArray = ['Axe.jpg', 'Spade.jpg', 'Wheelbarrow.jpg']
+    function changeImg(){
+        document.getElementById('slideshow').src = imgArray[i];
+        if(i<imgArray.length-1){
+            i++;
+        }
+        else{
+            i=0;
+        }
+        //setTimeout("changeImg()",2000);
+    }
+    document.addEventListener(onload, changeImg());
+    </script>
  </html>
