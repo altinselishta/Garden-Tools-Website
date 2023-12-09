@@ -1,40 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="widh=device-width, initial-scale=1.0">
-        <title>Products</title>
-        <link rel="stylesheet" href="products.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P1</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <script>
+        let i = 0;
+        let imgArray = ["Rake.jpg", 'Axe.jpg', 'Spade.jpg', 'Hoe.jpg', 'Prunners.jpg', 'Wheelbarrow.jpg', 'Hedge-Shears.jpg', 'Garden-Hose.jpg', 'Garden-Boots.jpg'];
 
-
-
-
-
-
-
-        <div id = "kontenti">
-            <header>
-              <h2>Slide Show: Shfaqja e Imazheve</h2>
-              <img id ="slideshow">
-            </header>
-            <button onclick="changeImg()"> Next </button>
-          </div>
-
-
-
-
-
-
-
-
-
-
-      
+        function changeImg() {
+            document.getElementById('slideshow').src = imgArray[i];
+            if (i < imgArray.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+        }
+        document.addEventListener('load', changeImg);
+    </script>
             <div class="items">
                 <div>
-                    <img src="Logo.jpg" alt="Logo i Garden" class="logo">
+                    <img src="Logo.png" alt="Logo i Garden" class="logo">
                 </div>
                 <ul id="listatheader">
                     <li><a href="Garden Tools.html">Garden Tools</a></li>
@@ -44,18 +33,13 @@
             </div>
         </header>
 
-      
-
-
-
-
         <main>
             
             <p class="Tools"><b>Garden Tools</b></p>
              <div class="Container">
 
                 
-                <div><img src="Rake.jpeg" alt="">
+                <div class="Producti1"><img src="Rake.jpeg" alt="">
                     <div class="Rake">
                         <p>Rake : 20€ <br> Place of origin: Kosovo</p>
                     </div>
@@ -119,8 +103,21 @@
 
                     </div>
                 </div>
+
+                
             </div>
 
+
+
+            <section class="slideshow-section">
+                <div id="kontenti">
+                    <header>
+                        <h2>Slide Show: shfaqja e imazheve</h2>
+                        <img id="slideshow" width="600" height="400">
+                    </header>
+                    <button onclick="changeImg()" id="button-slideshow">Next</button>
+                </div>
+            </section>
              <footer class="footeri">
                   <div class="Linkat-social">
                  <img src="LogoFacebok.png" alt="Logo Facebook" width="32px" height="32px">
@@ -135,26 +132,5 @@
                  </div>
              
          </footer>
-
-
-
-
      </body>
-
-
-     <script>
-    let i = 0;
-    let imgArray = ['Axe.jpg', 'Spade.jpg', 'Wheelbarrow.jpg']
-    function changeImg(){
-        document.getElementById('slideshow').src = imgArray[i];
-        if(i<imgArray.length-1){
-            i++;
-        }
-        else{
-            i=0;
-        }
-        //setTimeout("changeImg()",2000);
-    }
-    document.addEventListener(onload, changeImg());
-    </script>
  </html>

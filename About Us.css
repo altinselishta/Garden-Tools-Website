@@ -64,3 +64,29 @@ html {
     display: block;
   }
 }
+.footeri{
+  background-color: gray;
+  align-items: center;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.footeri h4{
+  text-align: center;
+  margin: 0;
+  gap: 10px;
+  margin-right: 10px;
+  
+}
+.Linkat-social{
+ display: flex;
+ gap: 10px;
+ margin-right: 10px;
+  
+}
+.Linkat-kontaktues{
+  display: flex;
+  gap: 10px;
+}
