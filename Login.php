@@ -112,17 +112,49 @@ if (isset($_POST['loginbtn'])) {
     </style>
 </head>
 <body>
-    <div>
-        <div class="f">
-            <form method="post">
-                <h1>Login</h1>
-                <label for="username">Username: </label><br>
-                <input type="text" id="username" name="username" placeholder="Enter.." required><br><br>
-                <label for="password">Password:<br>
-                <input type="password" id="password" name="password" placeholder="Enter..." required><br><br>
-                <button class="button" id="btn" type="submit" name="loginbtn">Log In</button><br><br>
-            </form>  
-        </div>
+<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+<div>
+      <div class="f">
+        <form action="index.html" method="post">
+        <h1>Login</h1>
+        <label for="email">Email: </label><br>
+        <input type="text" id="email" name="email" oninput="validateEmail()" placeholder="Enter.." required><br><br>
+        <div id="emailError" class="error"></div>
+        <label for="password"></label>Password:<br>
+        <input type="password" id="password" name="password" oninput="validatePassword()" placeholder="Enter..." required><br><br>
+        <div id="passwordError" class="password"></div>
+        <button class="button" id="btn" type="submit" onclick="validateForm()">Log In</button><br><br>
+        </form>  
+      </div>
     </div>  
-</body>
-</html>
+  </body>
+  <script>
+       function validateEmail() {
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var emailInput = document.getElementById('email').value;
+            var emailError = document.getElementById('emailError');
+            emailError.innerHTML = '';
+            
+            if (!emailRegex.test(emailInput)) {
+                emailError.innerHTML = 'Error: Enter a valid email address.';
+            }
+        }
+           
+        function validatePassword(){
+          var passwordRegex = /^[A-Z].\d{3}$/;
+          var passwordInput = document.getElementById('password').value;
+          var passwordError = document.getElementById('passwordError');
+          passwordError.innerHtml = '';
+
+          if (!passwordRegex.test(passwordInput)){
+            passwordError.innerHTML = 'Error: Enter a valid password.';
+          }
+        }
+          function validateForm() {
+            validateEmail();
+            validatePassword();
+   }
+
+      
+    </script>
+</html>     
