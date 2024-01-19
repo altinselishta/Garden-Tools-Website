@@ -31,6 +31,7 @@ if (isset($_POST['loginbtn'])) {
 
     }
 }
+include_once 'registerController.php';
 ?>
 
 <!DOCTYPE html>
