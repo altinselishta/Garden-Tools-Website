@@ -1,7 +1,7 @@
 <?php
   session_start();
    $hide = "";
-  if (!isset($_SESSION['username'])) 
+  if (!isset($_SESSION['email'])) 
     header("location: Login.php");
    else {
     if ($_SESSION['role'] == "admin")
@@ -180,7 +180,7 @@ ul li a:hover{
             <img src="LogoEmail.png" alt="Logo Email" width="32px" height="32px">
         </div>
     </footer>
-    <h3><?php echo "Username: ".$_SESSION['username']."<br>" ?></h3>
+    <h3><?php echo "Email: ".$_SESSION['email']."<br>" ?></h3>
     <h3><?php echo "Login Time: ".$_SESSION['loginTime']."<br>"?></h3>
 </body>
 </html>

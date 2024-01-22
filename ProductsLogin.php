@@ -8,7 +8,7 @@ if (isset($_POST['loginbtn'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
         
-        include_once 'User.php';
+        include_once 'UserP.php';
         $i=0;
 
         foreach ($users as $user) {
@@ -31,7 +31,7 @@ if (isset($_POST['loginbtn'])) {
 
     }
 }
-include_once 'registerController.php';
+include_once 'registerControllerP.php';
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +39,7 @@ include_once 'registerController.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>ProductsLogin</title>
     <link rel="stylesheet" href="style.css">
    
     <style>

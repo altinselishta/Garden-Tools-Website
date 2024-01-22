@@ -4,20 +4,20 @@ if (isset($_POST['loginbtn'])) {
     if (empty($_POST['email']) || empty($_POST['password'])) {
         echo "Please fill the required fields!";
     } else {
-
+        
         $email = $_POST['email'];
         $password = $_POST['password'];
-        
-        include_once 'User.php';
+
+        include_once 'UserA.php';
         $i=0;
 
         foreach ($users as $user) {
-          if($user['email'] == $email && $user['password'] == $password){
+          if ($user['email'] == $email &&  $user['password'] == $password){
               session_start();
                 $_SESSION['email'] = $email;
                 $_SESSION['role'] = $user['role'];
                 $_SESSION['loginTime'] = date("H:i:s");
-                header("location: Index.php");
+                header("location: ContactIndex.php");
                 exit();
               } else{
                   $i++;
@@ -31,7 +31,8 @@ if (isset($_POST['loginbtn'])) {
 
     }
 }
-include_once 'registerController.php';
+
+include_once 'registerControllerA.php';
 ?>
 
 <!DOCTYPE html>
@@ -39,11 +40,11 @@ include_once 'registerController.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>AboutLogin</title>
     <link rel="stylesheet" href="style.css">
-   
+    
     <style>
-   body{
+      body{
   display: flex;
   justify-content: center;
   align-items: center;

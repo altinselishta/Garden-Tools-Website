@@ -1,20 +1,20 @@
 <?php
 
 if (isset($_POST['loginbtn'])) {
-    if (empty($_POST['username']) || empty($_POST['password'])) {
+    if (empty($_POST['email']) || empty($_POST['password'])) {
         echo "Please fill the required fields!";
     } else {
         
-        $username = $_POST['username'];
+        $email = $_POST['email'];
         $password = $_POST['password'];
 
-        include_once 'users.php';
+        include_once 'UserC.php';
         $i=0;
 
         foreach ($users as $user) {
-          if ($user['username'] == $username &&  $user['password'] == $password){
+          if ($user['email'] == $email &&  $user['password'] == $password){
               session_start();
-                $_SESSION['username'] = $username;
+                $_SESSION['email'] = $email;
                 $_SESSION['role'] = $user['role'];
                 $_SESSION['loginTime'] = date("H:i:s");
                 header("location: ContactIndex.php");
@@ -22,7 +22,7 @@ if (isset($_POST['loginbtn'])) {
               } else{
                   $i++;
                   if($i == sizeof($users)) {
-                    echo "Incorrect Username or Password!";
+                    echo "Incorrect Email or Password!";
                     exit();
                   
                 }
@@ -31,6 +31,7 @@ if (isset($_POST['loginbtn'])) {
 
     }
 }
+include_once 'registerControllerC.php';
 ?>
 
 <!DOCTYPE html>

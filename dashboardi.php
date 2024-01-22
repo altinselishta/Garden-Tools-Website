@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document1</title>
 </head>
 <body>
     <table border="1">
@@ -21,9 +21,9 @@
              </tr>
 
              <?php 
-             include_once 'userRepository.php';
+             include_once 'userRepositoryC.php';
 
-             $userRepository = new UserRepository();
+             $userRepository = new UserRepositoryC();
 
              $users = $userRepository->getAllUsers();
 
@@ -38,8 +38,8 @@
                      <td>$user[username] </td>
                      <td>$user[password] </td>
                      <td>$user[role] </td>
-                     <td><a href='edit.php?id=$user[id]'>Edit</a> </td>
-                     <td><a href='delete.php?id=$user[id]'>Delete</a></td>
+                     <td><a href='editC.php?id=$user[id]'>Edit</a> </td>
+                     <td><a href='deleteC.php?id=$user[id]'>Delete</a></td>
                 </tr>
                 ";
              }
