@@ -22,11 +22,13 @@ class UserRepository{
 
         $sql = "INSERT INTO user (id,name,surname,email,username,password,role) VALUES (?,?,?,?,?,?)";
 
+
         $statement = $conn->prepare($sql);
 
         $statement->execute([$id,$name,$surname,$email,$username,$password,$role]);
 
         echo "<script> alert('User has been inserted successfuly!'); </script>";
+        
     }
 
     function getAllUsers(){

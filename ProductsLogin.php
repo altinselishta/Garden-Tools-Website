@@ -17,7 +17,7 @@ if (isset($_POST['loginbtn'])) {
                 $_SESSION['email'] = $email;
                 $_SESSION['role'] = $user['role'];
                 $_SESSION['loginTime'] = date("H:i:s");
-                header("location: Index.php");
+                header("location: ProductsIndex.php");
                 exit();
               } else{
                   $i++;

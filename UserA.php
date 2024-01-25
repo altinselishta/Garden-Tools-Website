@@ -17,5 +17,5 @@
     "role" => "user"
   ];
 
-  $user = [$user1, $user2];
+  $users = [$user1, $user2];
 ?>

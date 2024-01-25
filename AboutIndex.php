@@ -15,7 +15,6 @@
     <title>
      About Us
     </title>
-    <link rel="stylesheet" href="About Us.css">
   </head>
   <body>
     <div class="about-section">
@@ -141,6 +140,12 @@ html {
         </div>
       </div>   
     </div>
+    <main>
+        
+        <h1>Welcome</h1>
+        <p>This is the admin dashboard.</p>
+    </main>
+    
     <footer class="footeri">
       <div class="Linkat-social">
      <img src="LogoFacebok.png" alt="Logo Facebook" width="32px" height="32px">

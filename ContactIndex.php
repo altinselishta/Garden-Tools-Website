@@ -168,6 +168,11 @@
                 </ul>
             </nav>
         </header>
+        <main>
+        
+        <h1>Welcome</h1>
+        <p>This is the admin dashboard.</p>
+    </main>
     
         <section class="s1">
             <h1>Contact Us</h1>
