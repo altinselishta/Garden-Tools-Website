@@ -2,7 +2,7 @@
 include_once 'databaseConnectionPr.php';
 include_once 'productsPr.php';
 
-class productsRepositoryPr {
+class ProductsRepositoryPr {
     private $connection;
 
     function __construct() {
@@ -20,7 +20,7 @@ class productsRepositoryPr {
 
         $result = [];
         foreach ($products as $product) {
-            $result[] = new productsPr($product['ID'], $product['Emri'], $product['Cmimi'], $product['Pershkrimi'], $product['Fotografia']);
+            $result[] = new ProductsPr($product['ID'], $product['Emri'], $product['Cmimi'], $product['Pershkrimi'], $product['Fotografia']);
         }
 
         return $result;

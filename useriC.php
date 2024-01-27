@@ -1,5 +1,5 @@
 <?php
-class useriC {
+class UseriC {
     private $id;
     private $name;
     private $surname;
