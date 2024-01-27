@@ -1,10 +1,10 @@
 <?php
 
-class DatabaseConenctionC {
+class DatabaseConnectionC {
     private $server = "localhost";
     private $username = "root";
     private $password = "";
-    private $database = "garden tools website";
+    private $database = "garden_tools_website";
 
     function startConnection() {
         try {

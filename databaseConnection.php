@@ -1,10 +1,10 @@
 <?php
 
-class DatabaseConenction{
+class DatabaseConnection{
     private $server="localhost";
     private $username="root";
     private $password="";
-    private $database = "garden tools website";
+    private $database = "garden_tools_website";
 
     function startConnection(){
         try{
@@ -12,7 +12,7 @@ class DatabaseConenction{
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $conn;
         }catch(PDOException $e){
-            echo "Database Conenction Failed".$e->getMessage();
+            echo "Database Connection Failed".$e->getMessage();
             return null;
         }
     }

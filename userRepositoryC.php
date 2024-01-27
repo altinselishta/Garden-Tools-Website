@@ -5,7 +5,7 @@ class UserRepositoryC {
     private $connection;
 
     function __construct() {
-        $conn = new DatabaseConenctionC();
+        $conn = new DatabaseConnectionC();
         $this->connection = $conn->startConnection();
     }
 
