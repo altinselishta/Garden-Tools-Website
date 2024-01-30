@@ -38,8 +38,8 @@
                      <td>$user[username] </td>
                      <td>$user[password] </td>
                      <td>$user[role] </td>
-                     <td><a href='editC.php?id=$user[id]'>Edit</a> </td>
-                     <td><a href='deleteC.php?id=$user[id]'>Delete</a></td>
+                     <td><a href='edit.php?id=$user[id]'>Edit</a> </td>
+                     <td><a href='delete.php?id=$user[id]'>Delete</a></td>
                 </tr>
                 ";
              }

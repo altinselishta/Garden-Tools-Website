@@ -7,7 +7,7 @@ if(isset($_POST['registerBtn'])){
     if(empty($_POST['name']) || empty($_POST['surname']) || empty($_POST['email']) ||
     empty($_POST['username']) || empty($_POST['password'])){
         echo "Fill all fields!";
-    }else{
+    }else{ 
         $name = $_POST['name'];
         $surname = $_POST['surname'];
         $email = $_POST['email'];
@@ -15,7 +15,7 @@ if(isset($_POST['registerBtn'])){
         $password = $_POST['password'];
        $role = $_POST['role'];
 
-        $user  = new Useri(null,$name,$surname,$email,$username,$password,$role);
+        $user  = new User(null,$name,$surname,$email,$username,$password,$role);
         $userRepository = new UserRepository();
 
         $userRepository->insertUser($user);

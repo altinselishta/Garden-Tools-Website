@@ -9,16 +9,16 @@ class UserRepositoryC {
         $this->connection = $conn->startConnection();
     }
 
-    function insertUser($useri) {
+    function insertUser($user) {
         $conn = $this->connection;
 
-        $id = $useri->getId();
-        $name = $useri->getName();
-        $surname = $useri->getSurname();
-        $email = $useri->getEmail();
-        $username = $useri->getUsername();
-        $password = $useri->getPassword();
-        $role = $useri->getRole();
+        $id = $user->getId();
+        $name = $user->getName();
+        $surname = $user->getSurname();
+        $email = $user->getEmail();
+        $username = $user->getUsername();
+        $password = $user->getPassword();
+        $role = $user->getRole();
 
         $sql = "INSERT INTO user (id, name, surname, email, username, password, role) VALUES (?, ?, ?, ?, ?, ?, ?)";
 
@@ -51,7 +51,7 @@ class UserRepositoryC {
         return $user;
     }
 
-    function updateUser($id,$name,$surname,$email,$username,$password){
+    function updateUser($id,$name,$surname,$email,$username,$password,$role){
          $conn = $this->connection;
 
          $sql = "UPDATE user SET name=?, surname=?, email=?, username=?, password=?, role=? WHERE id=?";

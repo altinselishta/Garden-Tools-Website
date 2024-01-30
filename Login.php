@@ -8,7 +8,7 @@ if (isset($_POST['loginbtn'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
         
-        include_once 'User.php';
+        include_once 'users.php';
         $i=0;
 
         foreach ($users as $user) {

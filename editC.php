@@ -24,6 +24,7 @@ $user = $userRepository->getUserById($userId);
         <input type="text" name="email"  value="<?=$user['email']?>"> <br> <br>
         <input type="text" name="username"  value="<?=$user['username']?>"> <br> <br>
         <input type="text" name="password"  value="<?=$user['password']?>"> <br> <br>
+        <input type="text" name="role"  value="<?=$user['role']?>"> <br> <br>
 
         <input type="submit" name="editBtn" value="save"> <br> <br>
     </form>
@@ -38,8 +39,9 @@ if (isset($_POST['editBtn'])) {
     $email = $_POST['email'];
     $username = $_POST['username'];
     $password = $_POST['password'];
+    $role = $_POST['role'];
 
-    $userRepository->updateUser($id, $name, $surname, $email, $username, $password);
+    $userRepository->updateUser($id, $name, $surname, $email, $username, $password,$role);
     header("location:dashboardi.php");
 }
 ?>

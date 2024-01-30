@@ -26,4 +26,7 @@ class ProductsRepositoryPr {
         return $result;
     }
 }
+
+$productRepository = new ProductsRepositoryPr();
+$products = $productRepository->getAllProducts();
 ?>

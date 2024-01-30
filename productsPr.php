@@ -34,4 +34,3 @@ class ProductsPr {
         return $this->photograph;
     }
 }
-?>

@@ -51,7 +51,7 @@ class UserRepositoryA {
         return $user;
     }
 
-    function updateUser($id,$name,$surname,$email,$username,$password){
+    function updateUser($id,$name,$surname,$email,$username,$password,$role){
          $conn = $this->connection;
 
          $sql = "UPDATE user SET name=?, surname=?, email=?, username=?, password=?, role=? WHERE id=?";

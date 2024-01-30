@@ -1,8 +1,5 @@
 <?php
 include_once 'productsRepositoryPr.php';
-
-$productRepository = new ProductsRepositoryPr();
-$products = $productRepository->getAllProducts();
 ?>
 
 <!DOCTYPE html>
@@ -198,9 +195,11 @@ $products = $productRepository->getAllProducts();
             color: #ffffff;
             border-color: #ffffff;
         }
-    </style>
+</style>
 </head>
 <body>
+
+
     <script>
         let i = 0;
         let imgArray = ["Rake.jpeg", 'Axe.jpg', 'Spade.jpg', 'Hoe.jpg', 'Pruners.jpg', 'Wheelbarrow.jpg', 'Hedge-Shears.jpg', 'Garden-Hose.jpg', 'Garden-Boots.jpg'];
@@ -229,6 +228,26 @@ $products = $productRepository->getAllProducts();
     </header>
 
     <main>
+    <table>
+<h2>Produktet</h2>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Emri</th>
+                <th>Cmimi</th>
+                <th>Përshkrimi</th>
+                <th>Fotografia</th>
+            </tr>
+            <?php foreach ($products as $product): ?>
+                <tr>
+                    <td><?php echo $product->getId(); ?></td>
+                    <td><?php echo $product->getName(); ?></td>
+                    <td><?php echo $product->getPrice(); ?></td>
+                    <td><?php echo $product->getDescription(); ?></td>
+                    <td><img src="<?php echo $product->getPhotograph(); ?>" alt="<?php echo $product->getName(); ?>"></td>
+                </tr>
+            <?php endforeach; ?>
+</table>
     <p class="Tools"><b>Garden Tools</b></p>
     <div class="Container">
     <div>
@@ -314,24 +333,7 @@ $products = $productRepository->getAllProducts();
         <img src="LogoEmail.png" alt="Logo Email" width="32px" height="32px">
     </div>
 </footer>
-<h2>Produktet</h2>
-<table>
-    <tr>
-        <th>ID</th>
-        <th>Emri</th>
-        <th>Cmimi</th>
-        <th>Përshkrimi</th>
-        <th>Fotografia</th>
-    </tr>
-    <?php foreach ($products as $product): ?>
-    <tr>
-        <td><?php echo $product->getId(); ?></td>
-        <td><?php echo $product->getName(); ?></td>
-        <td><?php echo $product->getPrice(); ?></td>
-        <td><?php echo $product->getDescription(); ?></td>
-        <td><?php echo $product->getPhotograph(); ?></td>
-    </tr>
-<?php endforeach; ?>
-</table>
+
+    </main>
 </body>
-</html>
+</html> 
