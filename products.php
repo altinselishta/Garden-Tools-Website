@@ -121,12 +121,6 @@ include_once 'productsRepositoryPr.php';
             height: 100px ;
         }
 
-        .Hedge-Shears{
-            display: flex;
-            flex-direction: column;
-            width: 200px;
-            height: 100px ;
-        }
 
         .Garden-Hose{
             display: flex;
@@ -135,13 +129,56 @@ include_once 'productsRepositoryPr.php';
             height: 100px;
         }
 
-        .Garden-Boots{
+        .Bush-Hook{
             display: flex;
             flex-direction: column;
             width: 200px;
             height: 100px;
         }
+        .Gardening-Gloves{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 100px;
 
+        }
+        .Mower{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 100px;
+        }
+        .Watering-Can{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 100px;
+        }
+        .Ladder{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 100px;
+        }
+        .Sprayer{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 100px;
+        }
+        .Bucket{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 100px;
+
+        }
+        .Prunning-Saw{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 100px;
+        }
         .footeri{
             background-color: gray;
             align-items: center;
@@ -202,7 +239,7 @@ include_once 'productsRepositoryPr.php';
 
     <script>
         let i = 0;
-        let imgArray = ["Rake.jpeg", 'Axe.jpg', 'Spade.jpg', 'Hoe.jpg', 'Pruners.jpg', 'Wheelbarrow.jpg', 'Hedge-Shears.jpg', 'Garden-Hose.jpg', 'Garden-Boots.jpg'];
+        let imgArray = ["Rake.jpeg", 'Axe.jpg', 'Spade.jpg', 'Hoe.jpg', 'Pruners.jpg', 'Wheelbarrow.jpg', 'Garden-Hose.jpg', 'Bush-Hook.jpg', 'Gardening-Gloves.jpg', 'Mower.jpg', 'Watering-Can.jpg', 'Ladder.jpg', 'Sprayer.jpg', 'Bucket.jpg', 'Prunning-Saw.jpg'];
 
         function changeImg() {
             document.getElementById('slideshow').src = imgArray[i];
@@ -253,64 +290,110 @@ include_once 'productsRepositoryPr.php';
     <div>
         <img src="Rake.jpeg" alt="">
         <div class="Rake">
-            <p>Rake : 20€ <br> Place of origin: Kosovo</p>
+            <p>ID:1 Rake : 20€ <br> Place of origin: Kosovo</p>
         </div>
     </div>
     <div>
     <img src="Axe.jpg" alt="">
     <div class="Axe">
-        <p>Axe : 8€ <br> Place of origin: Albania</p>
+        <p>ID:2 Axe : 8€ <br> Place of origin: Albania</p>
     </div>
 </div>
 
 <div>
     <img src="Spade.jpg" alt="">
     <div class="Spade">
-        <p>Spade : 13€ <br> Place of origin: Albania</p>
+        <p>ID:3 Spade : 13€ <br> Place of origin: Albania</p>
     </div>
 </div>
 
 <div>
     <img src="Hoe.jpg" alt="">
     <div class="Hoe">
-        <p>Hoe : 15€ <br> Place of origin: Albania</p>
+        <p>ID:4 Hoe : 15€ <br> Place of origin: Albania</p>
     </div>
 </div>
 
 <div>
     <img src="Pruners.jpg" alt="">
     <div class="Pruners">
-        <p>Pruners : 5€ <br> Place of origin: Croatia</p>
+        <p>ID:5 Pruners : 5€ <br> Place of origin: Croatia</p>
     </div>
 </div>
 
 <div>
     <img src="Wheelbarrow.jpg" alt="">
     <div class="Wheelbarrow">
-        <p>Wheelbarrow : 90€ <br> Place of origin: Croatia</p>
+        <p>ID:6 Wheelbarrow : 90€ <br> Place of origin: Croatia</p>
     </div>
 </div>
 
-<div>
-    <img src="Hedge-Shears.jpg" alt="" width="50px" height="50px">
-    <div class="Hedge-Shears">
-        <p>Hedge-Shears : 7€ <br> Place of origin: Slovenia</p>
-    </div>
-</div>
 
 <div>
     <img src="Garden-Hose.jpg" alt="">
     <div class="Garden-Hose">
-        <p>Garden-Hose : 50€ <br> Place of origin: Kosovo</p>
+        <p>ID:7 Garden-Hose : 50€ <br> Place of origin: Kosovo</p>
+    </div>
+</div>
+
+
+<div>
+    <img src="Bush-Hook.jpg" alt="">
+    <div class = "Bush-Hook">
+    <p>ID:8 Bush-Hook : 11€ <br> Place of origin: Albania</p>
+
     </div>
 </div>
 
 <div>
-    <img src="Garden-Boots.jpg" alt="">
-    <div class="Garden-Boots">
-        <p>Garden-Boots : 12€ <br> Place of origin: Kosovo</p>
+    <img src="Gardening-Gloves.jpg" alt="">
+    <div class = "Gardening-Gloves">
+        <p>ID:9 Gardening-Gloves : 5€ <br> Place of origin: Kosovo</p>
     </div>
 </div>
+
+<div>
+    <img src="Mower.jpg" alt="">
+    <div class = "Mower">
+        <p>ID:10 Lawn Mower : 110€ <br> Place of origin: Croatia</p>
+    </div>
+</div>
+
+<div>
+    <img src="Watering-Can.jpg" alt="">
+    <div class = "Watering-Can">
+        <p>ID:11 Watering-Can : 2€ <br> Place of origin: Kosovo</p>
+    </div>
+</div>
+
+<div>
+<img src="Ladder.jpg" alt="">
+    <div class = "Ladder">
+        <p>ID:12 Ladder : 20€ <br> Place of origin: Albania</p>
+    </div>
+</div>
+
+<div>
+<img src="Sprayer.jpg" alt="">
+    <div class = "Sprayer">
+        <p>ID:13 Sprayer : 70€ <br> Place of origin: Slovenia</p>
+    </div>
+</div>
+
+<div>
+<img src="Bucket.jpg" alt="">
+    <div class = "Bucket">
+        <p>ID:14 Bucket : 1€ <br> Place of origin: Kosovo</p>
+    </div>
+</div>
+
+<div>
+<img src="Prunning-Saw.jpg" alt="">
+    <div class ="Prunning-Saw">
+        <p>ID:15 Prunning-Saw: 5€ <br> Place of origin: Croatia</p>
+    </div>
+</div>
+
 </div>
 <section class="slideshow-section">
     <div id="kontenti">
