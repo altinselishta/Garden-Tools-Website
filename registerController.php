@@ -1,6 +1,6 @@
 <?php
 include_once 'userRepository.php';
-include_once 'User.php';
+include_once 'user.php';
 
 
 if(isset($_POST['registerBtn'])){

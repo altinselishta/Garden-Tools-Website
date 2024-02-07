@@ -1,6 +1,6 @@
 <?php
 include_once 'userRepositoryC.php';
-include_once 'UserC.php';
+include_once 'userC.php';
 
 
 if(isset($_POST['registerBtn'])){
@@ -16,7 +16,7 @@ if(isset($_POST['registerBtn'])){
        $role = $_POST['role'];
 
         $user  = new UserC(null,$name,$surname,$email,$username,$password,$role);
-        $userRepository = new UserRepository();
+        $userRepository = new UserRepositoryC();
 
         $userRepository->insertUser($user);
     }
